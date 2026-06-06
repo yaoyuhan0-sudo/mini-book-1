@@ -1,0 +1,6 @@
+{
+  "name": "Firenze Odyssey",
+  "description": "Un prototipo di e-book culturale e interattivo su Firenze, con una mappa di progressione gamificata per studenti.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=JetBrains+Mono:ital,wght@0,400;1,400&family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", "EB Garamond", Georgia, serif;
+  --font-display: "Cinzel", "Playfair Display", "Times New Roman", serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-parchment-light: #FBF9F4;
+  --color-parchment-base: #F6F3EB;
+  --color-parchment-dark: #E8E1CE;
+  --color-desk: #16100C;
+}
+
+/* Custom aesthetic classes for Florence look */
+.desk-background {
+  background-color: var(--color-desk);
+  background-image: radial-gradient(circle at 50% 50%, #251B14 0%, #16100C 100%);
+}
+
+.parchment-paper {
+  background-color: var(--color-parchment-base);
+  background-image: 
+    radial-gradient(circle at 0% 0%, rgba(251, 249, 244, 0.4) 0%, transparent 80%),
+    radial-gradient(circle at 100% 100%, rgba(232, 225, 206, 0.5) 0%, transparent 80%);
+}
+
+/* Hide webkit scrolls for cleaner editorial look */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(22, 16, 12, 0.05);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(141, 110, 99, 0.3);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(141, 110, 99, 0.5);
+}
+
